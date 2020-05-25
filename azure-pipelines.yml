@@ -85,7 +85,7 @@ jobs:
 #       artifactName: winbuild
 
 - job: 'Build_Windows64'
-  dependsOn: Prebuild
+ # dependsOn: Prebuild
   variables:
     prHasCILabel: $[ dependencies.Prebuild.outputs['checkPrLabel.prHasCILabel'] ]
   pool:
